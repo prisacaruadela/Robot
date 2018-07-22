@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Robot</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="button-wrapper">
+        <Button class="my-button">Customize</Button>
+        <Button class="my-button">Save Position</Button>
+        <Button class="my-button">Trivia</Button>
+        <Button class="my-button">Rock,Scissor, Paper</Button>
+        <Button class="my-button">Write</Button>
+        <Button class="my-button">Audio</Button>
+        <Button class="my-button">Talk</Button>
+    </div>
+    
+    <div class="robot-wrapper">
+        <div class="left-arrow-robot"></div>
+        <div class="right-arrow-robot"></div>
+        <div class="robot-head"></div>
+        <div class="trivia-answer"></div> 
+        <div class="trivia-answer"></div>
+        <div class="robot-torso"></div>
+    </div>
+
+     <div class="robot-play-area">
+
+            <h3 id="trivia-question"></h3>
+            <button class="my-button trivia-button">YES</button>
+            <button class="my-button trivia-button">NO</button>
+
+            <button class="my-button rsp-button">ROCK</button>
+            <button class="my-button rsp-button">SCISSORS</button>
+            <button class="my-button rsp-button">PAPER</button>
+            <h3 id="rsp-robot"></h3>
+
+            <button class="color-button"></button>
+            <button class="color-button"></button>
+            <button class="color-button"></button>
+            <textarea id="writeArea"></textarea>
+
+            <h3 id="robotSays"></h3>    
+    </div>
+</body>
+
+<script src="main.js"></script>
+</html>

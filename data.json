@@ -1,0 +1,80 @@
+{
+  "heads": [
+    "face1.png",
+    "face2.png",
+    "face3.png",
+    "face4.png",
+    "face5.png"
+  ],
+  "audio": [
+    "Audio/a1.wav",
+    "Audio/a1s.wav",
+    "Audio/b1.wav",
+    "Audio/c1.wav",
+    "Audio/c2.wav",
+    "Audio/d1.wav",
+    "Audio/e1.wav",
+    "Audio/f1.wav",
+    "Audio/g1.wav"
+  ],
+  "trivia": [
+    {
+      "question": "Is 'em' a valid CSS length unit?",
+      "answer": "yes"
+    },
+    {
+      "question": "Does 'undefined' === 'not defined' in javascript?",
+      "answer": "no"
+    },
+    {
+      "question": "Is there a difference between '==' and '===' in javascript?",
+      "answer": "yes"
+    },
+    {
+      "question": "Does '2'+ 3 + 5 equals 10 in javascript? ",
+      "answer": "no"
+    }
+  ],
+  "rockScissorsPaper": [
+    {
+      "id": 0,
+      "name": "scissors"
+    },
+    {
+      "id": 1,
+      "name": "rock"
+    },
+    {
+      "id": 2,
+      "name": "paper"
+    }
+  ],
+  "colors": [
+    "darkred",
+    "darkblue",
+    "yellow"
+  ],
+  "talk": [
+    {
+      "id": 0,
+      "title": "A function in JavaScript can be either named or anonymous."
+    },
+    {
+      "id": 1,
+      "title": "JavaScript famous keyword this always refers to the current context."
+    },
+    {
+      "id": 2,
+      "title": "Closures are created whenever a variable that is defined outside the current scope is accessed from within some inner scope."
+    },
+    {
+      "id": 3,
+      "title": "A callback is a plain JavaScript function passed to some method as an argument or option. Some callbacks are just events, called to give the user a chance to react when a certain state is triggered."
+    },
+    {
+      "id": 4,
+      "title": "JavaScript can also manipulate cookies using the cookie property of the Document object. JavaScript can read, create, modify, and delete the cookie or cookies that apply to the current web page."
+    }
+  ],
+  "move": {}
+}
