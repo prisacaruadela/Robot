@@ -2,8 +2,15 @@
 (function assignButtonFunction() {
     var button = document.getElementById("writeButton");
     button.onclick = function() {
-        var x = document.getElementById("writeArea");
- 
+
+        button.disabled = true;
+        var x = localStorage.getItem("colorKey");
+        if (x)
+        {
+            var elw = document.getElementById("writeArea");
+            elw.style.color = x;
+        }
+        
         showElementsButtons(); loadData();
         
     };
@@ -12,6 +19,10 @@
 
 var changeTextColor = function() {
     var backColor = this.style.backgroundColor;
+
+    localStorage.removeItem("colorKey");
+    localStorage.setItem("colorKey", backColor);
+    
     var elw = document.getElementById("writeArea");
     elw.style.color = backColor;
 };
