@@ -10,7 +10,7 @@
     <div class="button-wrapper">
         <Button class="my-button">Customize</Button>
         <Button class="my-button">Save Position</Button>
-        <Button class="my-button">Trivia</Button>
+        <Button class="my-button" onclick="askQuestion()">Trivia</Button>
         <Button class="my-button">Rock,Scissor, Paper</Button>
         <Button class="my-button">Write</Button>
         <Button class="my-button">Audio</Button>
@@ -21,16 +21,17 @@
         <div class="left-arrow-robot"></div>
         <div class="right-arrow-robot"></div>
         <div class="robot-head"></div>
-        <div class="trivia-answer"></div> 
-        <div class="trivia-answer"></div>
+
         <div class="robot-torso"></div>
+        <div id="trivia-yes" class="trivia-answer"></div>
+        <div id="trivia-no" class="trivia-answer"></div>
     </div>
 
      <div class="robot-play-area">
 
             <h3 id="trivia-question"></h3>
-            <button class="my-button trivia-button">YES</button>
-            <button class="my-button trivia-button">NO</button>
+            <button class="my-button trivia-button" onclick="yesResp()">YES</button>
+            <button class="my-button trivia-button" onclick="noResp()">NO</button>
 
             <button class="my-button rsp-button">ROCK</button>
             <button class="my-button rsp-button">SCISSORS</button>

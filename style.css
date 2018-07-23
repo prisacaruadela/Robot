@@ -62,10 +62,13 @@
 }
 
 .trivia-answer {
-    height: 100px;
-    width: 100px;
+    height: 75px;
+    width: 75px;
     background-size: contain;
     display: none;
+    position: absolute;
+    top: 180px;
+    right: 6px;
 }
 
 
@@ -110,7 +113,8 @@
     margin-top:100px;
 }
 
-.trivia-button , .rsp-button, #trivia-question , #rsp-robot, #writeArea, #robotSays{
+
+.rsp-button, .trivia-button, #trivia-question, #rsp-robot, #writeArea, #robotSays{
     display: none;
 }
 
