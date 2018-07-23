@@ -11,7 +11,7 @@
         <Button class="my-button">Customize</Button>
         <Button class="my-button">Save Position</Button>
         <Button class="my-button">Trivia</Button>
-        <Button class="my-button">Rock,Scissor, Paper</Button>
+        <Button class="my-button" onclick="displayRock()">Rock,Scissor, Paper</Button>
         <Button class="my-button">Write</Button>
         <Button class="my-button">Audio</Button>
         <Button class="my-button">Talk</Button>
@@ -32,9 +32,9 @@
             <button class="my-button trivia-button">YES</button>
             <button class="my-button trivia-button">NO</button>
 
-            <button class="my-button rsp-button">ROCK</button>
-            <button class="my-button rsp-button">SCISSORS</button>
-            <button class="my-button rsp-button">PAPER</button>
+            <button class="my-button rsp-button rock-button" onclick="playRock('rock')">ROCK</button>
+            <button class="my-button rsp-button rock-button" onclick="playRock('scissors')">SCISSORS</button>
+            <button class="my-button rsp-button rock-button" onclick="playRock('paper')">PAPER</button>
             <h3 id="rsp-robot"></h3>
 
             <button class="color-button"></button>
@@ -42,7 +42,8 @@
             <button class="color-button"></button>
             <textarea id="writeArea"></textarea>
 
-            <h3 id="robotSays"></h3>    
+            <h3 id="robotSays"></h3> 
+            <h3 id="game-result"></h3>   
     </div>
 </body>
 

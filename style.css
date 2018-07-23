@@ -110,7 +110,7 @@
     margin-top:100px;
 }
 
-.trivia-button , .rsp-button, #trivia-question , #rsp-robot, #writeArea, #robotSays{
+.trivia-button , .rsp-button, #trivia-question , #rsp-robot, #writeArea, #robotSays, #game-result{
     display: none;
 }
 
