@@ -60,9 +60,25 @@ function getResult(myAnswer, robotAnswer) {
   gameResult.innerText = "myScore: " + myScore + " robotScore: " + robotScore;
   return "You lost! Robot is better than you!";
 }
+
+
+var promiseForDiv = new Promise(function(resolve, reject) {
+  var ok = 0;
+  for (var j = 0; j <= 10000; j++) {
+    ok = 1;
+  }
+  if (ok == 1) {
+    var obj = "Succes";
+    resolve(obj);
+  } else {
+    var reason = new Error("Your request is rejected");
+    reject(reason);
+  }
+});
+
 (function assignButtonFunction() {
   var button = document.getElementById("writeButton");
-  button.onclick = function () {
+  button.onclick = function() {
     button.disabled = true;
     var x = localStorage.getItem("colorKey");
     if (x) {
@@ -72,23 +88,27 @@ function getResult(myAnswer, robotAnswer) {
 
     showElementsButtons();
     loadData();
-  }
+  };
+  var ouchFunction = function() {
 
-  var ouchFunction = function () {
-
-    var documentHeight = document.documentElement.clientHeight;
-    var documentWidth = document.documentElement.clientWidth;
-
-    if (document.getElementById("divRandom"))
+    if (document.getElementById("divRandom")) {
       document.body.removeChild(document.getElementById("divRandom"));
+    }
+
+    promiseForDiv
+    .then(function (fulfilled) {
+        console.log(fulfilled);
+    })
+    .catch(function (error) {
+        console.log(error.message);
+    });
 
     var newDiv = document.createElement("div");
     var newContent = document.createTextNode("OUCH");
     newDiv.setAttribute("id", "divRandom");
     newDiv.appendChild(newContent);
     document.body.appendChild(newDiv);
-
-  }
+  };
 
   var robotItem = document.getElementsByClassName("robot-wrapper");
 
